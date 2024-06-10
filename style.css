@@ -57,11 +57,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #a13636;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -80,6 +81,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    color: #a13636;
 }
 
 nav ul li {
@@ -87,13 +89,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ae4747;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 main {
     padding-top: 60px; /* Ensure content does not hide behind fixed header */
+    background-color: #a13636;
 }
