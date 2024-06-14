@@ -1,5 +1,4 @@
 
-
 // Change header background and text color on scroll
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -15,9 +14,25 @@ window.addEventListener('scroll', function() {
 // Change menu item text color on hover
 document.querySelectorAll('nav ul li a').forEach(function(item) {
     item.addEventListener('mouseenter', function() {
-        this.style.color = '#ffeb3b'; // Change font color on hover
+        this.style.color = 'green',// Change font color on hover
+        this.backgroundColor='violet';
     });
     item.addEventListener('mouseleave', function() {
-        this.style.color = '#fff'; // Reset font color on mouse leave
+        this.style.color = 'yellow'; // Reset font color on mouse leave
+
     });
+    item.addEventListener('click', function() {
+        this.style.backgroundColor = '#ff6347'; // Change background color on click
+        // Optional: Change the color of the previously clicked item back to the original
+        this.style.borderRadius = '10px';
+        document.querySelectorAll('nav ul li a').forEach(function(otherItem) {
+            if (otherItem !== item) {
+                otherItem.style.backgroundColor = ''; // Reset background color of other items
+                otherItem.style.borderRadius = '';
+            }
+        });
+    });
+
 });
+
+
